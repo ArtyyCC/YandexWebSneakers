@@ -94,7 +94,7 @@ body {
 
 .Main_RowSort {
   display: flex;
-  max-width: 1170px;
+  width: 1170px;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 25px;
