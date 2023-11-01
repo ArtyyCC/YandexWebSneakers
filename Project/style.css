@@ -9,27 +9,33 @@
   box-sizing: border-box;
 }
 
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --Color-Text: #121723;
+}
+
 body {
   margin: 0;
 }
 
-li {
-  display: inline-block;
-  margin-left: 24px;
-  list-style-type: none
-}
 
+/* Header */
 
-.HeaderContainer {
+.Header {
+  height: 110px;
   display: flex;
   justify-content: center;
   background-color: white;
   padding: 0px;
   box-sizing: border-box;
-  border-bottom: 1px solid #A1A6B4;;
+  border-bottom: 1px solid #A1A6B4;
 }
 
-.HeaderContentContainer {
+.Header__ContentContainer {
   width: 1161px;
   display: flex;
   justify-content: space-between;
@@ -37,12 +43,12 @@ li {
 
 }
 
-.HeaderImg {
+.Header__Img {
   width: 212.34px;
   height: 63.42px;
   margin: 30px 0px 16.58px 0px;
 }
-.HeaderLinksText {
+.Header__LinksText {
   font-family: 'Anonymous Pro', monospace;
   color: black;
   outline: none;
@@ -52,74 +58,30 @@ li {
   font-weight: 700;
   line-height: normal;
 }
-.MainContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-
-
-.ContentCars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-
-
-
-.HeaderLinks {
+.Header__Links {
   width: max-content;
   margin: 50px 43px 40px 0px;
 }
 
-.ContainerCard {
+.Header__ListItem {
+  display: inline-block;
+  list-style-type: none
+}
+
+.Header__List {
+  display: flex;
+  gap: 25px;
+}
+/* Main */
+.Main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: max-content;
+  background-color: #F1F1F1;
 }
 
-.CardTextBackground {
-  background-color: white;
-  display: flex;
-  width: 371px;
-  padding: 32px 24px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 0px 0px 12px 12px;
-}
-
-
-.SortCardText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.NameCard {
-  font-family: 'Anonymous Pro', monospace;
-  color:  #121723;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.DescriptionCard {
-  font-family: 'Anonymous Pro', monospace;
-  color:  #121723;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-}
-
-.CollectionText {
+.Main__CollectionText {
   font-family: "IBM Plex Mono", monospace;
   color: var(--black, #121723);
   font-size: 48px;
@@ -130,38 +92,55 @@ li {
   margin: 25px 450px 24px 0px;
 }
 
-.Sort {
+.Main_RowSort {
   display: flex;
   max-width: 1170px;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 25px;
-  margin: 0px 24px 24px 24px;
 }
 
-
-.CardContainer {
+.Main__ContentHolder {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
 }
 
-
-.FooterContainer {
+/* Footer */
+.Footer {
   height: 142px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
   justify-content: center;
+  background-color: #121723;
   padding: 0px;
+  box-sizing: border-box;
   margin-top: auto;
 }
 
+.Footer__ContentContainer {
+  width: 1161px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-.FooterLinksText {
+}
+
+.Footer_NavigationBar {
+  width: 1161px;
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0px;
+}
+
+.Footer__Img {
+  width: 299.653px;
+  height: 22.32px;
+}
+.Footer__LinksText {
   font-family: 'Anonymous Pro', monospace;
-  color: white;
+  color: #FFF;
   outline: none;
   text-decoration: none;
   font-size: 20px;
@@ -170,23 +149,19 @@ li {
   line-height: normal;
 }
 
-
-.FooterLinkLogoContainer {
-  width: 1161px;
-  height: 23px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 32px 33px;
-
-}
-
-.FooterLinks {
+.Footer__Links {
   width: max-content;
 }
 
-.FooterImgContainer {
-  height: 1px;
+.Footer__ListItem {
+  color: #FFF;
+  display: inline-block;
+  list-style-type: none
+}
+
+.Footer__List {
+  display: flex;
+  gap: 25px;
 }
 
 .Coopyright {
@@ -212,3 +187,48 @@ li {
   background-color: #F1F1F1; 
 }
 
+/* Card */
+
+.Card {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardImg {
+  width: 371px;
+  height: 254px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+
+.CardBody {
+  background-color: white;
+  display: flex;
+  width: 371px;
+  padding: 32px 24px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.CardTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CardName {
+  font-family: 'Anonymous Pro', monospace;
+  color: var(--Color-Text);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.CardDescription {
+  color: var(--Color-Text);
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
