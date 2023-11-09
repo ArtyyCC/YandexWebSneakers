@@ -8,7 +8,7 @@ Training project developed as part of the first training module.
 
 ## TO-DO 
 
-- [ ] Multiple product cards
+- [x] Multiple product cards
 - [ ] Transitions through the cards
 - [ ] Interactivity of product cards (Hover)
 - [ ] Home page by logo click

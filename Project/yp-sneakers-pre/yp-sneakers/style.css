@@ -205,14 +205,14 @@ footer .nav-link {
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 1140px;
+    width: 1140px;
     border-radius: 50px;
     background-color: #fff;
     padding: 48px;
 }
 
 .Card__Img {
-    max-width: 1044px;
+    width: 1044px;
     margin-bottom: 32px;
 }
 
