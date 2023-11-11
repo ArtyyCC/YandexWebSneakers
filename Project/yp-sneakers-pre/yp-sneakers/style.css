@@ -214,6 +214,10 @@ footer .nav-link {
     margin: 0px;
 }
 
+.card__link {
+    text-decoration: none;
+}
+
 .card__img {
     width: 1044px;
     margin: 0px auto 32px auto;
@@ -333,6 +337,7 @@ footer .nav-link {
     .header-container {
         flex-direction: column;
         align-items: center;
+        gap: 25px;
     }
 
     .content {
@@ -346,12 +351,17 @@ footer .nav-link {
     .footer-content {
         flex-direction: column;
         align-items: center;
+        gap: 25px;
+    }
+
+    .Content_Holder {
+        width: 350px;
     }
 
     /* Сраница с информацией */
 
     .card__img {
-        width: 295px;
+        max-width: 295px;
     }
 
     .card__description {
@@ -400,10 +410,19 @@ footer .nav-link {
         font-weight: 400;
         line-height: normal;
     }
+
+    .card__parametr-line {
+        height: 1px;
+        max-width: 295px;
+    }
 }
 
 /* Планшеты */
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+
+    .Content_Holder {
+        width: 752px;
+    }
 
     .header-container {
         max-width: 752px;
@@ -416,7 +435,7 @@ footer .nav-link {
     }
 
     .card__img {
-        width: 295px;
+        width: 656px;
     }
 
     .card__description {
@@ -450,7 +469,7 @@ footer .nav-link {
     }
 
     .card__description-right {
-        width: 650px;
+        max-width: 656px;
     }
 
     .card__specification-text {
@@ -464,7 +483,10 @@ footer .nav-link {
         width: 752px;
     }
 
-
+    .card__parametr-line {
+        height: 1px;
+        max-width: 656px;
+    }
 
 }
 
