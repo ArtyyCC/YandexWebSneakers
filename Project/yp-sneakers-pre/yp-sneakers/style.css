@@ -136,9 +136,11 @@ h1 {
     height: 100%;
     border-radius: 12px;
     background: white;
+    overflow: hidden;
 }
 
 .sneaker-image {
+
     width: 100%;
 }
 
@@ -166,6 +168,11 @@ footer {
     align-items: center;
     background: #121723;
     margin-top: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #121723;
 }
 
 /* стили для футера */
