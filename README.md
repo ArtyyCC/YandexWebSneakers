@@ -9,19 +9,19 @@ Training project developed as part of the first training module.
 ## TO-DO 
 
 - [x] Multiple product cards
-- [ ] Transitions through the cards
+- [x] Transitions through the cards
 - [x] Interactivity of product cards (Hover)
-- [ ] Home page by logo click
-- [ ] Сontent display correctness
+- [x] Home page by logo click
+- [x] Сontent display correctness
 
 ### Syntax
 - [x] Use :header :nav :footer
-- [ ] No html and css errors
+- [x] No html and css errors
 
 ### CSS 
 
 - [x] Use :header :nav :footer
-- [ ] No html and css errors
+- [x] No html and css errors
 
 
 
