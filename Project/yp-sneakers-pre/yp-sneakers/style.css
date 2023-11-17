@@ -277,7 +277,6 @@ footer .nav-link {
     flex-direction: column;
     gap: 20px;
     max-width: 506px;
-
     overflow: hidden;
 }
 
