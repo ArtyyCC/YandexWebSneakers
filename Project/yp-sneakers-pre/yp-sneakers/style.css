@@ -53,6 +53,10 @@ main {
     background: #F1F1F1;
 }
 
+.bulletin-board {
+    visibility: visible;
+}
+
 /* стили для хедера(шапки) сайта */
 header {
     display: flex;
